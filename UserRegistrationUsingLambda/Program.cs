@@ -11,11 +11,15 @@ namespace UserRegistrationUsingLambda
             Console.Write("Enter The Last Name : ");
             string LName = Console.ReadLine();
             Console.Write("Enter the Email Address : ");
-            string EMail = Console.ReadLine();
+            string Email = Console.ReadLine();
+            Console.Write("Enter the Mobile Number : ");
+            string MobileNo = Console.ReadLine();
+
             UserRegistration registration = new UserRegistration();
             Console.WriteLine(registration.ValidateFirstName(FName));
             Console.WriteLine(registration.ValidateLastName(LName));
-            Console.WriteLine(registration.ValidateEMail(EMail));
+            Console.WriteLine(registration.ValidateEMail(Email));
+            Console.WriteLine(registration.ValidateMobileNo(MobileNo));
 
 
         }
