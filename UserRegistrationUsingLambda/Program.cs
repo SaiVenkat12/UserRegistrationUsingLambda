@@ -14,12 +14,15 @@ namespace UserRegistrationUsingLambda
             string Email = Console.ReadLine();
             Console.Write("Enter the Mobile Number : ");
             string MobileNo = Console.ReadLine();
+            Console.Write("Enter the Password : ");
+            string Password = Console.ReadLine();
 
             UserRegistration registration = new UserRegistration();
             Console.WriteLine(registration.ValidateFirstName(FName));
             Console.WriteLine(registration.ValidateLastName(LName));
             Console.WriteLine(registration.ValidateEMail(Email));
             Console.WriteLine(registration.ValidateMobileNo(MobileNo));
+            Console.WriteLine(registration.ValidatePassword(Password));
 
 
         }
