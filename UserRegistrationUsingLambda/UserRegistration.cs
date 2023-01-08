@@ -15,9 +15,9 @@ namespace UserRegistrationUsingLambda
         public const string EMail = "^[a-zA-Z0-9]([.+-_]{0,1}[a-zA-z0-9]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,}([.]{0,1}[A-Za-z]{2,}?([.]{0,1}[A-Za-z]{2,}))*[,]{0,1}$";
         public const string PassWord = "(?=.*[A-Z])(?=.*[0-9])(?=.*[.,/+_@!#$%&*]).{8,}$";
         public string ValidateFirstName(string FName) =>
-             Regex.IsMatch(FName, FIRST_NAME_REGEX) ? "First Name is Match" : "Name is Not a Match";
+             Regex.IsMatch(FName, FIRST_NAME_REGEX) ? "First Name is a Match" : "Name is Not a Match";
         public string ValidateLastName(string LName) =>
-             Regex.IsMatch(LName, Last_NAME_REGEX) ? "Last Name Match" : "Name is Not a Match";
+             Regex.IsMatch(LName, Last_NAME_REGEX) ? "Last Name is a Match" : "Name is Not a Match";
         public string ValidateEMail(string Email) =>
              Regex.IsMatch(Email, EMail) ? "EMail is Match" : "Email Not a Match";
         public string ValidateMobileNo(string MobileNo) =>
